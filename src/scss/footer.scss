@@ -1,0 +1,34 @@
+.footer_wrap{
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 40px 0;
+  height: 20px;
+}
+@mixin footerLine{
+  width: 436px;
+  height: 2px;
+  background: #dddddd;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer{
+  width: 1228px;
+  margin: 0 auto;
+  span:nth-child(1) {
+    @include footerLine;
+  }
+  span:nth-child(2){
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    margin: 0 33px;
+    vertical-align: middle;
+    width: 280px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  span:nth-child(3){
+    @include footerLine;
+  }
+}

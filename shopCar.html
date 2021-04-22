@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>购物车</title>
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/head.css">
+        <link rel="stylesheet" href="./src/css/shopCar.css">
+        <link rel="stylesheet" href="./iconfont/iconfont.css">
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./src/js/threeLevelMenu.js"></script>
+        <script src="./src/js/stepNumber.js"></script>
+        <script src="./src/js/shoppingTable.js"></script>
+        <script src="src/js/shopCar.js"></script>
+    </head>
+    <body>
+        <!-- 头部 -->
+        <div class="head_wrap">
+            <div class="head_top">
+                <div class="clear_fix">
+                    <div class="head_top_left">
+                        <a href="./index.html">
+                            <i class="iconfont icon-Home"></i>
+                            <span>1号店首页</span>
+                        </a>
+                    </div>
+                    <div class="head_top_right">
+                        <a href="./login.html" class="login">登录</a>
+                        <a href="./regist.html" class="regist">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 内容 -->
+        <div class="shopping_table_wrap">
+            <div class="shopping_table">
+                <div class="my_shopCar clear_fix">
+                    <span>我的购物车</span>
+                    <div class="address">
+                        <span>配送至：</span>
+                        <div class="cities"></div>
+                    </div>
+                    <div class="addressDetails">
+                        <span>详细地址：</span>
+                        <input class="adDetails" type="text" placeholder="省/市/区/详细地址">
+                    </div>
+                </div>
+                <div class="shoppingCar_list"></div>
+            </div>
+        </div>
+
+        <!-- 尾部 -->
+        <div class="footer_wrap">
+            <div class="footer">
+                <div class="balance">提交订单</div>
+                <div class="total_price">
+                    <span>总价：</span>
+                    <span class="total"></span>
+                </div>
+            </div>
+        </div>
+
+        <script src="./src/js/isLogin.js"></script>
+        <script>
+            //城市菜单、购物车列表
+            init();
+        </script>
+    </body>
+</html>

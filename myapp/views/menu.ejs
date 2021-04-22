@@ -1,0 +1,29 @@
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <!-- Optionally, you can add icons to the links -->
+            <li class="<%- activeIndex === 0 ? 'active' : '' %>"><a href="/"><i class="fa fa-link"></i> <span>首页</span></a></li>
+            <li class="<%- activeIndex === 1 ? 'active' : '' %>"><a href="/users"><i class="fa fa-link"></i> <span>用户管理</span></a></li>
+            <li class="<%- activeIndex === 2 ? 'active' : '' %>"><a href="/product"><i class="fa fa-link"></i> <span>商品管理</span></a></li>
+            <li class="<%- activeIndex === 3 ? 'active' : '' %>"><a href="/order"><i class="fa fa-link"></i> <span>订单管理</span></a></li>
+            <!--<li class="treeview ">
+                <a href="#"><i class="fa fa-link"></i> <span>订单管理</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/order">待支付</a></li>
+                    <li><a href="/order">已支付</a></li>
+                </ul>
+            </li>-->
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>

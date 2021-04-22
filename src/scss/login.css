@@ -1,0 +1,93 @@
+body {
+  background: #fcfcfc url("../../img/registbg.png") no-repeat; }
+
+form {
+  width: 600px;
+  height: 400px;
+  border: 1px solid #f4f4f4;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -260px; }
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 50px;
+  color: #333333;
+  margin-bottom: 20px; }
+
+label {
+  display: inline-block;
+  width: 70px;
+  font-size: 16px;
+  color: #666666;
+  line-height: 30px;
+  margin-right: 20px;
+  text-align: right;
+  margin-left: 60px; }
+
+input:not([type=submit]) {
+  margin: 10px 10px; }
+
+input:not([type=submit]) {
+  width: 270px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px; }
+
+[type=submit] {
+  width: 140px;
+  height: 40px;
+  border: 1px solid #000000;
+  background-color: white;
+  margin-left: 232px;
+  font-size: 20px;
+  margin-top: 33px;
+  cursor: pointer; }
+  [type=submit]:hover {
+    background-color: #ff4040;
+    color: white; }
+
+p {
+  margin-left: 163px;
+  font-size: 12px;
+  color: #cccccc;
+  line-height: 20px;
+  margin-bottom: 5px; }
+
+.toLogin {
+  margin-left: 25px; }
+  .toLogin:hover {
+    color: #ff4040; }
+
+.back {
+  position: relative;
+  top: 26px;
+  left: -470px; }
+  .back:hover {
+    color: #ff4040; }
+
+form {
+  height: 300px;
+  margin-top: -200px; }
+
+input:not([type=submit]) {
+  margin: 12px 10px; }
+
+.registbn {
+  position: relative;
+  top: 0;
+  right: -30px;
+  font-size: 16px; }
+  .registbn:hover {
+    color: #ff4040; }
+
+.back {
+  left: 20px; }
+
+/*# sourceMappingURL=login.css.map */

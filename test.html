@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <!--<script src="./src/js/threeLevelMenu.js"></script>-->
+        <!--<script src="./src/commonJs/cities.js"></script>-->
+    </head>
+    <body>
+        <script>
+            /*$.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:3001",
+                data: {
+                    type: 0x01,
+                    account: "2345",
+                    password: "123qqqQ"
+                },
+                success: function ( data ) {
+                    console.log( data );
+                }
+            })*/
+
+            /*let arr=[];
+            init();
+            function init() {
+                for(let i=0;i<3;i++){
+                    arr.push(new ThreeLevelMenu(document.body));
+//               事件的抛发和侦听对象都必须是DOM
+                    arr[i].menu.get(0).addEventListener(ThreeLevelMenu.SELECT_CHANGE_EVENT,menuSelectHandler);
+                }
+                ajax({type:0});
+            }
+
+            function menuSelectHandler(e) {
+                let index=arr.indexOf(this.self);
+                if(index===0){
+                    ajax({type:1,province:e.selectContent});
+                }else if(index===1){
+                    ajax({type:2,province:arr[0].selectContent,city:e.selectContent});
+                }
+            }
+
+            function ajax(obj) {
+                let xhr=new XMLHttpRequest();
+                xhr.addEventListener("readystatechange",readyStateChangeHandler);
+                xhr.open("POST","http://127.0.0.1:3011");
+                xhr.send(encodeURIComponent(JSON.stringify(obj)));
+            }
+
+            function readyStateChangeHandler(e) {
+                if(this.readyState===4 && this.status===200){
+                    let obj=JSON.parse(decodeURIComponent(this.response));
+                    arr[obj.type].setData(obj.resArr);
+                }
+            }*/
+
+            var date = new Date();
+            date.setTime(date.getTime() - 10000);
+            console.log(date.toGMTString())
+            document.cookie = "a=bc";
+            document.cookie = "a=bc;expires=" + date.toGMTString();
+        </script>
+    </body>
+</html>

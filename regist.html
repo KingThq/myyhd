@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>用户注册</title>
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/regist.css">
+        <script src="./src/md5/md5.js" defer></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./src/js/regist.js" defer></script>
+    </head>
+    <body>
+        <form action="">
+            <h1>用户注册</h1>
+            <label for="account">用户名</label>
+            <input type="text" id="account" name="account" placeholder="请输入用户名">
+            <span></span><br>
+            <p>4-10位字母或数字组成</p>
+            <label for="password">密码</label>
+            <input type="password" id="password" name="password" placeholder="请输入密码">
+            <span></span><br>
+            <p>长度为8-16位，由字母数字组成</p>
+            <label for="confirmpass">确认密码</label>
+            <input type="password" id="confirmpass" name="confirmpass" placeholder="请确认密码">
+            <span></span><br>
+            <label for="phone">手机号</label>
+            <input type="text" id="phone" name="phone" placeholder="请输入手机号">
+            <span></span><br>
+            <input type="submit" value="注册">
+
+            <a href="./login.html" class="toLogin">已有账号，去登陆</a>
+            <a href="./index.html" class="back">返回首页</a>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>用户登录</title>
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/login.css">
+        <script src="./src/md5/md5.js" defer></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./src/js/login.js" defer></script>
+    </head>
+    <body>
+        <form action="" method="post">
+            <h1>用户登录</h1>
+            <div>
+                <label for="account">用户名</label><input type="text" id="account" name="user" placeholder="请输入用户名"><br>
+            </div>
+            <div>
+                <label for="password">密&nbsp;&nbsp;&nbsp;码</label><input type="password" id="password" name="pass" placeholder="请输入密码"><br>
+            </div>
+            <div>
+                <input type="submit" value="登录" class="bn">
+                <a href="./regist.html" class="registbn">注册</a>
+            </div>
+            <a href="./index.html" class="back">返回首页</a>
+        </form>
+    </body>
+</html>

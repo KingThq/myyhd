@@ -1,0 +1,91 @@
+.head_wrap {
+  background-color: #ffffff; }
+  .head_wrap .head_top {
+    height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f4f4f4;
+    line-height: 30px; }
+    .head_wrap .head_top > div {
+      width: 1228px;
+      margin: 0 auto; }
+
+.head_top_left a {
+  float: left;
+  display: block;
+  height: 30px;
+  padding: 0 10px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  color: #666;
+  position: relative; }
+  .head_top_left a:hover {
+    color: #ff4040; }
+  .head_top_left a i {
+    position: absolute;
+    left: 8px; }
+  .head_top_left a span {
+    padding-left: 14px; }
+
+.head_top_right {
+  float: right;
+  position: relative; }
+  .head_top_right a {
+    height: 30px;
+    padding: 0 10px;
+    color: #aaaaaa; }
+    .head_top_right a:hover {
+      color: #ff4040; }
+
+.head_bottomWrap {
+  border-bottom: 2px solid #ff4040; }
+
+.head_bottom {
+  margin: 0 auto;
+  width: 1228px;
+  padding: 25px 0;
+  height: 60px; }
+  .head_bottom div:nth-of-type(1) {
+    float: left; }
+    .head_bottom div:nth-of-type(1) img {
+      float: left;
+      margin-right: 10px; }
+
+.shop_car {
+  border: 1px solid #d7d7d7;
+  float: right;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 10px; }
+  .shop_car a {
+    display: block;
+    width: 130px;
+    height: 40px;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400; }
+    .shop_car a .icon-qicheqianlian--copy {
+      font-size: 20px;
+      padding-right: 5px; }
+    .shop_car a:hover {
+      color: #ff4040; }
+
+.search {
+  float: right;
+  border: 1px solid #eeeeee;
+  background-color: #f8f8f8;
+  margin-right: 20px;
+  margin-top: 10px; }
+  .search input {
+    height: 40px;
+    border: 0;
+    background-color: #f8f8f8;
+    padding-left: 10px; }
+  .search .icon-search {
+    padding: 10px;
+    cursor: pointer;
+    color: #d7d7d7;
+    position: relative;
+    top: 2px;
+    font-size: 20px; }
+
+/*# sourceMappingURL=head.css.map */

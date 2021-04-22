@@ -1,0 +1,21 @@
+@import "regist";
+
+form{
+  height: 300px;
+  margin-top: -200px;
+}
+input:not([type=submit]){
+  margin: 12px 10px;
+}
+.registbn{
+  position: relative;
+  top: 0;
+  right: -30px;
+  font-size: 16px;
+  &:hover{
+    color: #ff4040;
+  }
+}
+.back{
+  left: 20px;
+}

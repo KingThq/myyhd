@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>商品详情页</title>
+        <link rel="stylesheet" href="./src/css/head.css">
+        <link rel="stylesheet" href="./src/css/footer.css">
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./iconfont/iconfont.css">
+        <link rel="stylesheet" href="./src/css/goodsDetails.css">
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./src/js/goodsMagnifier.js"></script>
+        <script src="./src/js/stepNumber.js"></script>
+        <script src="./src/js/goodsDetails.js"></script>
+    </head>
+    <body>
+        <!-- 头部 -->
+        <div class="head_wrap">
+            <div class="head_top">
+                <div class="clear_fix">
+                    <div class="head_top_left">
+                        <a href="./index.html">
+                            <i class="iconfont icon-Home"></i>
+                            <span>1号店首页</span>
+                        </a>
+                    </div>
+                    <div class="head_top_right">
+                        <a href="./login.html" class="login">登录</a>
+                        <a href="./regist.html" class="regist">注册</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head_bottomWrap">
+                <div class="head_bottom clear_fix">
+                    <div>
+                        <a href="">
+                            <img src="./img/yihaodian.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/quanqiuchaoshi.jpg">
+                        </a>
+                    </div>
+                    <div class="shop_car">
+                        <a href="shopCar.html" target="_blank">
+                            <i class="iconfont icon-qicheqianlian--copy"></i>
+                            <span>购物车</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 内容 -->
+        <div class="content_wrap">
+            <div class="content clear_fix">
+                <div class="goods_imgs"></div>
+                <div class="goods_infos">
+                    <h2 class="info">德国原装进口酸奶 德亚（Weidendorf）常温原味酸牛奶200ml*24盒 整箱装</h2>
+                    <div class="price">
+                        <ul class="current_price clear_fix">
+                            <li>抢购价</li>
+                            <li class="nowPrice">￥89.9</li>
+                        </ul>
+                        <ul class="msgsales"></ul>
+                    </div>
+                    <div class="youhui clear_fix">
+                        <span>优惠券</span>
+                        <span class="manjian">满169减30</span>
+                        <span>领取优惠券</span>
+                    </div>
+                    <div class="cuxiao clear_fix">
+                        <span>促销</span>
+                        <div class="cuxiao_msg">
+                            <p class="huangou">
+                                <span>换购</span>
+                                <span>满5元另加9.90元，或满15元另加19.90元，或满25元另加49元，即可在购物车换购热销商品</span>
+                                <span>共1项</span>
+                            </p>
+                            <p class="huangou">
+                                <span>限购</span>
+                                <span>购买1-200件时享受单件价￥89.90，超出数量以结算价为准</span>
+                                <span>共1项</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="baozhang">
+                        <span>保障</span>
+                        <span>不支持7天无理由退货</span>
+                        <span>正品保障</span>
+                    </div>
+                    <div class="goods_num clear_fix">
+                        <span>数量</span>
+                        <div class="step_num"></div>
+                    </div>
+                    <div class="add_shopCar">加入购物车</div>
+                </div>
+            </div>
+
+            <!-- 尾部 -->
+            <div class="footer_wrap">
+                <div class="footer">
+                    <span></span>
+                    <span>已经到最底部啦~</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./src/js/isLogin.js"></script>
+        <script>
+            init();
+        </script>
+    </body>
+</html>

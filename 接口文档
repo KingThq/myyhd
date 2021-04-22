@@ -1,0 +1,115 @@
+用户数据库操作
+1、添加用户
+    req
+        type: 0x01
+        account: 1234
+        password: 123
+        phone:
+    res
+        result{status: 0/1, message: }
+2、用户登录
+    req
+        type: 0x02,
+        account: 1234
+        password: 123
+    res
+        result{status: 0/1, message: }
+3、查询用户id和手机号
+    req
+        type: 15
+        account: 1234
+    res
+        result{status: 0/1, [], message:}
+
+购物车操作
+0、返回数据库中的商品
+    req
+        type: 12
+        kind: 1/2/3  //3种不同的分类
+    res
+        resolute:[],//购物车列表
+        error:null
+1、获取购物车列表
+    req
+        type: 0x03
+    res
+        resolute:[],//购物车列表
+        error:null
+2、向购物车中添加商品
+      req
+          type:0x04
+          id:00001,
+          num:1 / stepNum
+          restNum:this.props.count  //改变商品数量
+      res
+          resolute:[],//购物车列表
+          error:null
+3、修改商品数量
+      req
+          type:0x05
+          id:00001
+          num:2
+      res
+          resolute:[],//购物车列表
+          error:null
+4、删除商品
+      req
+          type:0x06
+          id:00001
+      res
+          resolute:[],//购物车列表
+          error:null
+5、选中商品
+      req
+          type:0x07
+          id:00001
+          selected:true
+      res
+          resolute:[],//购物车列表
+          error:null
+6、选中所有商品
+      req
+          type:0x08
+          ids:[001,002]
+          selected:true
+      res
+          resolute:[],//购物车列表
+          error:null
+
+城市菜单
+1、调用省菜单
+    req
+      type:9;
+    res
+      resArr:[]
+2、调用省对应的市菜单
+    req
+      type:10
+      province:string
+    res
+      resArr:[]
+3、市对应的县菜单
+    req
+       type:11
+       province:string
+       city:string
+    res
+      resArr:[];
+
+商品详情页获取图片
+    req
+        type:13
+        goodsId: 1010
+    res
+        result:[]
+
+生成订单
+    req
+        type:14
+        account:1234
+        info: xxxx
+        address:"北京市北京朝阳区.."
+        phone:
+        totalPrice:
+    res
+        result
